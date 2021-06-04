@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    header {
+      display: none;
+    }
+  }
+  
+  /*calculator*/
+  /*calculator*/
+  /*calculator*/
+  
+  .calculator-container {
+    background-color: white;
+    overflow: hidden;
+    width: 275px;
+    min-width: 275px;
+    box-shadow: 2px 9px 15px -6px rgba(0, 0, 0, 0.75);
+    border-radius: 2%;
+  }
+  /*Inputs*/
+  /*Inputs*/
+  /*Inputs*/
+  
+  .input-container {
+    overflow: visible;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #11161a;
+    padding: 5%;
+  }
+  
+  #history {
+    height: 20px;
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-overflow: string;
+  }
+  
+  #input {
+    height: 50px;
+    margin-bottom: -10px;
+    max-width: 100%;
+    font-size: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-overflow: string;
+  }
+  
+  /*buttons*/
+  /*buttons*/
+  /*buttons*/
+  
+  #button-container {
+    display: grid;
+    width: 90%;
+    margin: 5% auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    grid-gap: 5px;
+  }
+  
+  #button-container button {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    user-select: none;
+    font-size: 1rem;
+  }
+  #button-container button:nth-child(3) {
+    background-color: purple;
+  }
+  
+  #button-container button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+    z-index: 1;
+  }
+  
+  #button-container button:hover:after {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  #button-container button:active {
+    background-color: #555;
+    transform: translateY(2%);
+  }
+  #button-container button:focus {
+    outline: none;
+  }
+  
+  .operator {
+    background-color: rgba(0, 89, 144, 1);
+  }
+  
+  #equals {
+    background-color: rgba(0, 128, 0, 1);
+  }
+  
+  #C {
+    background-color: rgba(228, 36, 39, 1);
+  }
+  
+  #CE {
+    background-color: orange;
+  }
+  
+  .operator,
+  #equals,
+  #C,
+  #CE {
+    color: ivory;
+  }
+  
